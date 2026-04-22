@@ -1,0 +1,63 @@
+{
+  "$schema": "../assetlist.schema.json",
+  "chain_name": "hazinachain",
+  "assets": [
+    {
+      "description": "The native staking and governance token of HazinaChain — The Treasury Blockchain powering the Hazina DeFi gaming ecosystem.",
+      "denom_units": [
+        {
+          "denom": "uhzn",
+          "exponent": 0,
+          "aliases": ["microhzn"]
+        },
+        {
+          "denom": "hzn",
+          "exponent": 6
+        }
+      ],
+      "base": "uhzn",
+      "name": "Hazina",
+      "display": "hzn",
+      "symbol": "HZN",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/logo-256.png",
+        "svg": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/logo.svg"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/logo-256.png",
+          "svg": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/logo.svg"
+        }
+      ],
+      "coingecko_id": "",
+      "keywords": ["staking", "governance", "defi", "gaming"]
+    },
+    {
+      "description": "The secondary utility token of HazinaChain used for in-game transactions and faucet distribution.",
+      "denom_units": [
+        {
+          "denom": "ukumi",
+          "exponent": 0,
+          "aliases": ["microkumi"]
+        },
+        {
+          "denom": "kumi",
+          "exponent": 6
+        }
+      ],
+      "base": "ukumi",
+      "name": "Kumi",
+      "display": "kumi",
+      "symbol": "KUMI",
+      "logo_URIs": {
+        "png": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/kumi-256.png"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/kumi-256.png"
+        }
+      ],
+      "keywords": ["gaming", "utility"]
+    }
+  ]
+}
