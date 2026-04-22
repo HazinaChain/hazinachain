@@ -1,0 +1,79 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "hazinachain",
+  "status": "live",
+  "network_type": "mainnet",
+  "website": "https://hazinachain.com",
+  "pretty_name": "HazinaChain",
+  "chain_id": "hazinachain-1",
+  "bech32_prefix": "hazina",
+  "daemon_name": "hazinad",
+  "node_home": "$HOME/.hazinachain",
+  "key_algos": ["secp256k1"],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "uhzn",
+        "fixed_min_gas_price": 0.001,
+        "low_gas_price": 0.001,
+        "average_gas_price": 0.0025,
+        "high_gas_price": 0.01
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "uhzn"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/hazinachain/hazinachain",
+    "recommended_version": "v1.0.0",
+    "compatible_versions": ["v1.0.0"],
+    "cosmos_sdk_version": "0.47",
+    "consensus": {
+      "type": "cometbft",
+      "version": "0.37.4"
+    },
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/genesis.json"
+    }
+  },
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.hazinachain.com",
+        "provider": "HazinaChain"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://api.hazinachain.com",
+        "provider": "HazinaChain"
+      }
+    ],
+    "grpc": []
+  },
+  "explorers": [
+    {
+      "kind": "HazinaChain Explorer",
+      "url": "https://explorer.hazinachain.com",
+      "tx_page": "https://explorer.hazinachain.com/tx/${txHash}",
+      "account_page": "https://explorer.hazinachain.com/address/${accountAddress}"
+    }
+  ],
+  "images": [
+    {
+      "png": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/logo-256.png",
+      "svg": "https://raw.githubusercontent.com/hazinachain/hazinachain/main/assets/logo.svg"
+    }
+  ],
+  "keywords": ["defi", "gaming", "cosmos", "treasury"]
+}
